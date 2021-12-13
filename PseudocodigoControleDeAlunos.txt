@@ -1,0 +1,40 @@
+SENAI – Curso Programador de Front-End – 2021 – Turma 3
+Disciplina: Lógica de Programação – UC8
+Atividade 1:  Situação-Problema: Controle de Alunos da Empresa Savinis
+
+Pseudocódigo:
+
+Algoritmo “ControleDeAlunos”
+
+var
+contAlunos <-- 0; numeroDeAlunos <-- 10;
+
+//Com a estrutura de repetição "para" ou "for"  
+
+para  (contAlunos <-- 0 até contAlunos <= numeroDeAlunos) faça
+    se (numeroDeAlunos == 0) então
+        escrever("Sala de aula vazia! " );
+    senão se (contAlunos % 2 == 0) então
+             escrever("O número de alunos presentes é: " + "Par");
+          senão
+             escrever ("O número de alunos presentes é: " + "Impar"); 
+          fim-se 
+    fim-se  
+fim-para
+
+//Com a estrutura de repetição "enquanto" ou "while"
+
+contAlunos <-- 0;
+enquanto (contAlunos <= numeroDeAlunos) faça
+    se (numeroDeAlunos == 0) então
+        escrever("Sala de aula vazia! " );
+    senão se (contAlunos % 2 == 0) então
+             escrever("O número de alunos presentes é: " + "Par");
+          senão
+             escrever ("O número de alunos presentes é: " + "Impar"); 
+          fim-se 
+    fim-se  
+   contAlunos++;      
+fim-enquanto
+
+
